@@ -1,3 +1,7 @@
+*.vscode
+test.c
+test2.c
+
 # Prerequisites
 *.d
 
