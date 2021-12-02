@@ -69,8 +69,34 @@ void swap(int& x, int& y)
 }
 
 // Missing Number Problem
+int find_lack_number(int* arr, int n)
+{
+  int tem = 0;
+  
+  for (int i = 0; i < n; i++) {
+    tem = tem ^ arr[i];
+  }
+
+  for (int i = 1; i <= n + 1; i++) {
+    tem = tem ^ i;
+  }
+
+  return tem;
+}
 
 // Nim
+void nim(int* nums, int numsSize)
+{
+  int x = 0;
+  
+  for (int i = 0; i < numsSize; i++)
+    x ^= nums[i];
+
+  if (x)
+    printf("First win! \n");
+  else
+    printf("First lose! \n");
+}
 
 // Josephus Problem
 
@@ -93,6 +119,8 @@ int main() {
   int n3 = 32;
   int n4 = 10;
   int n5 = 20;
+  int n6[] = { 1, 2, 3, 4, 5, 7, 8, 9, 10};
+  int n7[] = {3, 4, 5};
 
   // Number of 1 Bits
   printf("==Number of 1 Bits== \n");
@@ -120,8 +148,12 @@ int main() {
   printf("%d %d\n", n4, n5);
 
   // Missing Number Problem
+  printf("==Missing Number Problem== \n");
+  printf("%d \n", find_lack_number(n6, sizeof(n6) / sizeof(n6[0])));
 
   // Nim
+  printf("==Nim== \n");
+  nim(n7, sizeof(n7) / sizeof(n7[0]));
 
   // Josephus Problem
 
