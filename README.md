@@ -13,6 +13,7 @@
 ## Bitwise
 ## Binary search(common case, recursive BS)
 ## Stable matching: Gale-Shapley algorithm
+## Pattern searching: Knuth-Morris-Pratt (KMP) algorithm
 
 ## Common case
 ### Staircase walk (counting, optimization)
