@@ -10,11 +10,14 @@
 
 ### Stable matching: Gale-Shapley algorithm
 
+## Stack and Queue(array, linked list, common case)
+## Linked list(CLL, DLL)
 ## Bitwise
 ## Binary search(common case, recursive BS)
 ## Stable matching: Gale-Shapley algorithm
 ## Pattern searching: Knuth-Morris-Pratt (KMP) algorithm
 
 ## Common case
+### Expression Evaluation(infix to postfix)
 ### Staircase walk (counting, optimization)
 ### Binomial coefficient
