@@ -19,8 +19,7 @@ void printList(struct Node* node) {
 }
 
 // add a node at the front
-void push(struct Node** head_ref, int new_data)
-{
+void push(struct Node** head_ref, int new_data) {
   // 1. allocate node
   struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
 
