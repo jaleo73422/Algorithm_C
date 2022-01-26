@@ -12,6 +12,7 @@
 
 ## Stack and Queue(array, linked list, common case)
 ## Linked list(CLL, DLL)
+## Tree(BT, BST AVL Tree)
 ## Bitwise
 ## Binary search(common case, recursive BS)
 ## Stable matching: Gale-Shapley algorithm
