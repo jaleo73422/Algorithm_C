@@ -238,7 +238,7 @@ struct node* deleteNode(struct node* root, int key) {
  
 // a utility function to print preorder traversal of the tree
 // the function also prints height of every node
-void preOrder(struct node *root) {
+void preOrder(struct node* root) {
   if(root != NULL) {
     printf("%d ", root->key);
     
