@@ -291,7 +291,7 @@ int main() {
     -1   2    6
   */
  
-  printf("Preorder traversal of the constructed AVL tree is \n");
+  printf("\nPreorder traversal of the constructed AVL tree is \n");
   preOrder(root_2);
 
   root = deleteNode(root_2, 10);
