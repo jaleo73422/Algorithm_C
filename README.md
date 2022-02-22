@@ -10,11 +10,14 @@
 
 ### Stable matching: Gale-Shapley algorithm
 
-## Stack and Queue(array, linked list, common case)
-## Linked list(CLL, DLL)
-## Tree(BT, BST, AVL tree, RBT, Heap)
+### B tree, B+ tree
+
+## Stack and Queue (array, linked list, common case)
+## Linked list (CLL, DLL)
+## Tree (BT, BST, AVL tree, RBT, Heap, Splay tree)
+## Graph (Adjacency List, Adjacency Matrix, BFS, DFS)
 ## Bitwise
-## Binary search(common case, recursive BS)
+## Binary search (common case, recursive BS)
 ## Stable matching: Gale-Shapley algorithm
 ## Pattern searching: Knuth-Morris-Pratt (KMP) algorithm
 

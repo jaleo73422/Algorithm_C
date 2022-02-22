@@ -2,20 +2,19 @@
 #include <stdlib.h>
 
 struct Node {
-    int data;
-    struct Node* next;
-    struct Node* prev;
+  int data;
+  struct Node* next;
+  struct Node* prev;
 };
 
 // DLL Traversal
 // This function prints contents of linked list starting from the given node.
-void printList(struct Node* node)
-{
+void printList(struct Node* node) {
   struct Node* last;
 
   printf("\nTraversal in forward direction \n");
   
-  while (node != NULL) {
+  while(node != NULL) {
     printf(" %d ", node->data);
 
     last = node;
@@ -24,7 +23,7 @@ void printList(struct Node* node)
 
   printf("\nTraversal in reverse direction \n");
   
-  while (last != NULL) {
+  while(last != NULL) {
     printf(" %d ", last->data);
     
     last = last->prev;
@@ -44,7 +43,7 @@ void push(struct Node** head_ref, int new_data) {
     new_node->prev = NULL;
 
     // 4. change prev of head node to new node
-    if (*head_ref != NULL)
+    if(*head_ref != NULL)
       (*head_ref)->prev = new_node;
 
     // 5. move the head to point to the new node
@@ -54,7 +53,7 @@ void push(struct Node** head_ref, int new_data) {
 // add a node after a given node
 void insertAfter(struct Node* prev_node, int new_data) {
   // 1. check if the given prev_node is NULL
-  if (prev_node == NULL) {
+  if(prev_node == NULL) {
     printf("The given previous node cannot be NULL.");
     
     return;
@@ -76,7 +75,7 @@ void insertAfter(struct Node* prev_node, int new_data) {
   new_node->prev = prev_node;
 
   // 7. change previous of new_node's next node
-  if (new_node->next != NULL)
+  if(new_node->next != NULL)
     new_node->next->prev = new_node;
 }
 
@@ -93,7 +92,7 @@ void append(struct Node** head_ref, int new_data) {
   new_node->next = NULL;
 
   // 4. If the Linked List is empty, then make the new node as head.
-  if (*head_ref == NULL) {
+  if(*head_ref == NULL) {
     new_node->prev = NULL;
     *head_ref = new_node;
     
@@ -101,7 +100,7 @@ void append(struct Node** head_ref, int new_data) {
   }
 
   // 5. Else traverse till the last node.
-  while (last->next != NULL)
+  while(last->next != NULL)
     last = last->next;
 
   // 6. change the next of last node
